@@ -1,0 +1,158 @@
+body {
+    background-color: #FCA21A;
+    margin: 30px 30px;
+/*
+}
+
+.container {
+    margin: 10px 10px;
+}
+
+.row.middle {
+    background-color: white;
+    opacity: 0.5;
+    border: solid;
+    border-color: #FCA21A;
+}
+
+.row.bottom {
+    background-color: white;
+    opacity: 0.5;
+    border: solid;
+    border-color: #FCA21A;
+}
+
+.col-md-4.upper {
+    padding: 0 0;
+}
+
+.row.logo_1 {
+    background-color: white;
+    opacity: 0.5;
+    align-self: center;
+}
+
+.logo_1 img {
+    width: 100%;
+    display: inline-block;
+    border: solid;
+    border-color: #FCA21A;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    opacity: 1;
+}
+
+ul li {
+    font-style: italic;
+}
+
+.col-md-8.star {
+    margin: 0 0;
+    padding: 0 0;
+    background-color: white;
+    opacity: 1;
+    text-align: center;
+    font-size: large;
+}
+
+.col-md-4.establish {
+    background-color: white;
+    opacity: 1;
+    text-align: center;
+}
+
+.col-md-8.upper {
+    border: solid;
+    border-color: white;
+    margin-left: 20px;
+}*/
+    
+ /*   .col-md-4.upper-left {
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        /*background-blend-mode: color-dodge;*/
+    }    */
+
+.col-md-4.upper-left img {
+    display: inline-block;
+    align-self: center;
+}
+
+.upper-left {
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #EFECE7;
+    opacity: 0.5;
+    border: solid;
+    border-color:#FCA21A;        
+}
+.col-md-4.middle-left {
+    background-color: #EFECE7;
+    opacity: 0.5;
+    margin-bottom: 5px;
+}   
+
+.left-section {
+    padding-left: 0px;
+    list-style: none;
+    background-color: #EFECE7;
+    opacity: 0.5;
+    margin-bottom: 5px;
+}
+
+ul.link-mid {
+    margin-left: 0px;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.col-md-4.middle-left-2 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.symbol-star{
+    background-color: #EFECE7;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.middle-content {
+    margin-top: 10px;
+}
+
+.col-md-4.mid-1 {
+    text-align: center;
+    display: inline-block;
+    background-color: #EFECE7;
+    opacity: 0.5;
+    border-right: solid;
+    border-width: 5px;
+    border-color: #FCA21A;
+}
+
+.col-md-4.mid-2 {
+    text-align: center;
+    display: inline-block;
+    background-color: #EFECE7;
+    opacity: 0.5;
+    border-right: solid;
+    border-width: 3px;
+}
+
+.mid-3 {
+    color: white;
+}
+
+.col-md-4.mid-3{
+    border-left: solid;
+    border-width: 1px;
+}
+
+h1 {
+    color: white;
+}
