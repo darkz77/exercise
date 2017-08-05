@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>1st JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified JavaScript -->
+<!--         <script src="First.js"></script>
+ -->    </head>
+    <body>
+	    <div class="container">
+	    <div>
+	    	<input type="text" name="put-inside" id="1" placeholder="Please input a number">
+			<input type="text" name="put-inside" id= "4" placeholder="Please input a number">
+	    	<button type="button" id="2" onclick="printResult()">Check hang</button>
+	    	<button type="button" id="5" onclick="clearForm()">Clear</button>
+	    	<div id="3"></div>
+	    </div>
+	    <script type="text/javascript">
+
+			//Sum function
+			document.getElementById('1' && '4').onchange = function printResult () {
+				// Nhap bien
+				var numberX = document.getElementById('1').value;
+				var numberY = document.getElementById('4').value;
+				var xValidate = isNaN(numberX);
+				var yValidate = isNaN(numberY);
+				var sumXY = parseFloat(numberX) + parseFloat(numberY);
+				var subtractXY = parseFloat(numberX) - parseFloat(numberY);
+				var	multiXY = parseFloat(numberX) * parseFloat(numberY);
+				var divideXY = parseFloat(numberX) / parseFloat(numberY);
+				var sumAll = parseFloat(sumXY) + parseFloat(multiXY) + parseFloat(subtractXY) + parseFloat(divideXY);
+				var alertText = 'Please input valid number';
+				if (xValidate ==true || yValidate == true)
+					document.getElementById('3').innerHTML = alertText;
+				else {
+					document.getElementById('3').innerHTML = sumXY + '<br>' 
+					document.getElementById('3').innerHTML += subtractXY + '<br>' + multiXY + '<br>' + divideXY + '<br>' + sumAll;
+				}	
+			}
+
+			//Clear function
+			function clearForm () {
+				document.getElementById('1').value = null;
+				document.getElementById('4').value = null;
+				document.getElementById('3').innerHTML = '';
+			}
+		</script>
+    </body>
+</html>
