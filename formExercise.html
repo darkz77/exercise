@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>1st JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	    </head>
+ 	<style type="text/css">
+ 		body {
+ 			margin: 50px 50px;
+ 			border: solid;
+ 			border-color: gray;
+ 			padding: 50px 50px;
+ 		}
+		input {
+			display: inline-block;
+			width: 100%;
+		}
+
+ 	</style>
+
+
+
+    <body>
+	    <div class = "container" ><h1>Sign Up</h1>
+	    	
+			<!-- First Name -->
+	    	<h2> First name </h2>
+	    	<input type="text" name = "formFirstName" id = "1" placeholder = "Enter name" onblur = "checkEmptyFirstname()"></input>
+	    	<div id = "error1"></div>
+
+	    	<!-- Second Name -->
+ 		    <h2> Second name </h2>
+	    	<input type="text" name = "formSecondName" id = "2" placeholder = "Enter surname" onblur = "checkEmptySurname()" ></input>
+	    	<div id = "error2"></div>
+
+	    	<!-- Email -->
+ 		    <h2> Email </h2>
+	    	<input type="email" name = "formEmail" id = "3" placeholder = "Enter email" onblur = "checkEmptyEmail()" ></input>
+	    	<div id = "error3"></div>
+
+	    	<!-- Password -->
+		    <h2> Password </h2>
+	    	<input type="password" name = "formPassword" id = "4" placeholder = "Enter password" onblur = 'checkEmptyPassword()' ></input>
+	    	<div id = "error4"></div>
+
+	    	<!-- Button -->
+	    	<br><button name = "submitButton" id = "5" onclick = "checkEmpty()"> Submit </button></a>
+	    </div>
+    </body>
+
+    <script type="text/javascript">
+    	function checkEmptyFirstname () {
+    		var checkFirstName = document.getElementById('1').value;
+    		if (checkFirstName == null || checkFirstName == '', checkFirstName.length < 5)
+    			document.getElementById('error1').innerHTML = ('Please input at least 5 characters');
+	    		else {
+	    			document.getElementById('error1').innerHTML = ('');
+	    		}
+    	}
+
+    	function checkEmptySurname () {
+    		var checkSecondName = document.getElementById('2').value;
+    		if (checkSecondName == null || checkSecondName == '', checkSecondName.length < 5)
+    			document.getElementById('error2').innerHTML = ('Please input at least 5 characters');
+    		else {
+    			document.getElementById('error2').innerHTML = ('');
+    		}
+    	}
+
+    	function checkEmptyEmail () {
+    		var checkEmail = document.getElementById('3').value;
+    		var atpos = checkEmail.indexOf("@");
+    		var dotpos = checkEmail.lastIndexOf(".");
+    		if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= checkEmail.length)
+        		document.getElementById('error3').innerHTML = ("Please enter a valid e-mail address");
+        	else {
+        		document.getElementById('error3').innerHTML = ("");
+        	}
+    		// if (checkEmail == null || checkEmail == '', checkEmail.length < 5)
+    		// 	document.getElementById('error3').innerHTML = ('Please input at least 5 characters');
+    		// else {
+    		// 	document.getElementById('error3').innerHTML = ('');
+    	}
+
+
+    	function checkEmptyPassword () {
+    		var checkPassword = document.getElementById('4').value;
+    		// var atpos = checkPassword.indexOf("@");
+    		// var dotpos = checkPassword.lastIndexOf(".");
+    		// if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= checkPassword.length) {
+      //   		document.getElementById('error4').innerHTML = ("Not a valid e-mail address");
+    		if (checkPassword == null || checkPassword == '', checkPassword.length < 5)
+    			document.getElementById('error4').innerHTML = ('Please input at least 5 characters');
+    		else {
+    			document.getElementById('error4').innerHTML = ('');
+    		}
+    	}
+
+
+    </script>
+</html>
